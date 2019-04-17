@@ -16,3 +16,42 @@ class VultrFirewall(VultrBase):
         '''
         params = params if params else dict()
         return self.request('/v1/firewall/group_list', params, 'GET')
+    
+    ''' 
+    def group_create(self, description, params=None)
+         #create firewall group $description 
+         
+         params = update_params(params, {'DESCRIPTION': description})
+         return self.request('/v1/firewall/group_create', params, 'POST')
+    '''
+        
+    ''' 
+    def group_delete(self, firewallgroupid, params=None)
+         #delete $firewallgroup
+         
+         params = update_params(params, {'FIREWALLGROUPID': firewallgroupid})
+         return self.request('/v1/firewall/', params, 'POST')
+    '''
+    
+    '''
+    def rule_(self, , params=None)
+        
+        params = update_params(params, {})
+        return self.request('v1/firewall/rule_', params, 'POST')
+    '''
+    
+    '''
+    def rule_(self, , params=None)
+        
+        params = update_params(params, {})
+        return self.request('v1/firewall/rule_', params, 'POST')
+    '''
+        
+    '''
+    def rule_(self, , params=None)
+        
+        params = update_params(params, {})
+        return self.request('v1/firewall/rule_', params, 'POST')
+    '''
+    
+    
