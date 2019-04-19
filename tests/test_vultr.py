@@ -53,6 +53,18 @@ class AuthenticatedTests(unittest.TestCase):
         '''List firewall groups'''
         self.vultr.firewall.group_list()
 
+    def test_firewall_rule_create(self):
+        '''Create firewall group rule'''
+        self.vultr.firewall.rule_create()
+
+    def test_firewall_rule_delete(self):
+        '''Delete firewall group rule'''
+        self.vultr.firewall.rule_list()
+
+    def test_firewall_rule_list(self):
+        '''List firewall group rules '''
+        self.vultr.firewall.rule_list()
+
     def test_iso_list(self):
         '''List ISOs / images'''
         self.vultr.iso.list()
